@@ -22,6 +22,32 @@ body {
   max-width: 1200px;
 }
 
+.curved-mobile {
+  width: 100%;
+  height: auto;
+  margin-bottom: -0.3em;
+}
+
+.curved-desktop {
+  display: none;
+  width: 100%;
+  height: auto;
+  margin-bottom: -0.3em;
+}
+
+.curved-mobile-bottom {
+  width: 100%;
+  height: auto;
+  margin-top: -0.3em;
+}
+
+.curved-desktop-bottom {
+  display: none;
+  width: 100%;
+  height: auto;
+  margin-top: -0.3em;
+}
+
 .header__top {
   padding: 2em 1.5em;
   display: flex;
@@ -90,6 +116,8 @@ body {
 .header__bottom-card {
   width: 100%;
   text-align: center;
+}
+.header__bottom-card--one {
   margin-bottom: 8em;
 }
 .header__bottom-card-icon {
@@ -103,6 +131,32 @@ body {
 }
 .header__bottom-card-text {
   color: hsl(0, 0%, 50%);
+}
+
+.main .section {
+  position: relative;
+  background-color: hsl(207, 100%, 98%);
+}
+.main .section-img {
+  width: 100%;
+  height: auto;
+  padding: 5em 3.5em;
+}
+.main .section__info {
+  text-align: center;
+}
+.main .section__info-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding: 0 2em 1em;
+}
+.main .section__info-text {
+  padding: 0 2.5em 4em;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+}
+.main .section-two {
+  background-color: hsl(0, 0%, 100%);
 }
 
 .footer .attribution {
@@ -123,6 +177,18 @@ body {
   }
 }
 @media (min-width: 768px) {
+  .curved-mobile {
+    display: none;
+  }
+  .curved-desktop {
+    display: block;
+  }
+  .curved-mobile-bottom {
+    display: none;
+  }
+  .curved-desktop-bottom {
+    display: block;
+  }
   .header__top-btn {
     padding: 1em 4em;
   }
@@ -140,6 +206,9 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 4em;
+  }
+  .header__bottom__card--one {
+    margin-bottom: 0em;
   }
 }
 @media (min-width: 992px) {

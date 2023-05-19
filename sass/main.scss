@@ -20,6 +20,28 @@ body {
 	width: 100%;
 	max-width: 1200px;
 }
+.curved-mobile {
+	width: 100%;
+	height: auto;
+	margin-bottom: -0.3em;
+}
+.curved-desktop {
+	display: none;
+	width: 100%;
+	height: auto;
+	margin-bottom: -0.3em;
+}
+.curved-mobile-bottom {
+	width: 100%;
+	height: auto;
+	margin-top: -0.3em;
+}
+.curved-desktop-bottom {
+	display: none;
+	width: 100%;
+	height: auto;
+	margin-top: -0.3em;
+}
 .header {
 	&__top {
 		padding: 2em 1.5em;
@@ -60,6 +82,7 @@ body {
 			font-size: 1.5rem;
 			margin-bottom: 3.5em;
 			line-height: 1.5em;
+			// font-weight: 600;
 		}
 		&-btn {
 			padding: 1em 3em;
@@ -88,7 +111,9 @@ body {
 		&-card {
 			width: 100%;
 			text-align: center;
-			margin-bottom: 8em;
+			&--one {
+				margin-bottom: 8em;
+			}
 			&-icon {
 				max-width: 10%;
 				height: auto;
@@ -103,6 +128,38 @@ body {
 			}
 		}
 	}
+	
+}
+
+.main {
+	.section {
+		position: relative;
+	
+		background-color: $blue;
+		&-img {
+			width: 100%;
+			height: auto;
+			padding: 5em 3.5em;
+		}
+		&__info {
+			text-align: center;
+			&-title {
+				font-size: 2.2rem;
+				font-weight: 700;
+				padding: 0 2em 1em;
+			}
+			&-text {
+				padding: 0 2.5em 4em;
+				font-size: 1.4rem;
+				line-height: 1.5em;
+				
+			}
+		}
+		&-two {
+background-color: $white;
+		}
+	}
+	
 }
 
 .footer {
@@ -129,6 +186,19 @@ body {
 	}
 }
 @media (min-width: 768px) {
+	.curved-mobile {
+		display: none;
+	}
+	.curved-desktop {
+		display: block;
+	}
+	.curved-mobile-bottom {
+		display: none;
+	}
+	.curved-desktop-bottom {
+		display: block;
+
+	}
 	.header {
 		&__top {
 			&-btn {
@@ -149,8 +219,13 @@ body {
 			display: flex;
 			justify-content: space-between;
 			margin-top: 4em;
-			
+			&__card {
+				&--one {
+					margin-bottom: 0em;
+				}
+			}
 		}
+		
 	}
 }
 @media (min-width: 992px) {
@@ -162,9 +237,7 @@ body {
 			&-text {
 				font-size: 1.8rem;
 				padding: 0 12em;
-				
 			}
-		
 		}
 		&__bottom {
 			display: flex;
@@ -185,11 +258,11 @@ body {
 			}
 			&-text {
 				font-size: 2.2rem;
-				}
-				&-btn {
-					padding: 1.3em 8em;
-					font-size: 1.8rem;
-				}
+			}
+			&-btn {
+				padding: 1.3em 8em;
+				font-size: 1.8rem;
+			}
 		}
 		&__bottom {
 			&-card {
@@ -199,7 +272,6 @@ body {
 				&-text {
 					font-size: 1.8rem;
 				}
-
 			}
 		}
 	}
