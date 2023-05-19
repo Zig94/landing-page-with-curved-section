@@ -59,6 +59,7 @@ body {
 		&-text {
 			font-size: 1.5rem;
 			margin-bottom: 3.5em;
+			line-height: 1.5em;
 		}
 		&-btn {
 			padding: 1em 3em;
@@ -91,7 +92,6 @@ body {
 			&-icon {
 				max-width: 10%;
 				height: auto;
-				align-self: start;
 			}
 			&-number {
 				font-size: 6.8rem;
@@ -100,7 +100,6 @@ body {
 			}
 			&-text {
 				color: hsl(0, 0%, 50%);
-				
 			}
 		}
 	}
@@ -112,6 +111,96 @@ body {
 		text-align: center;
 		a {
 			color: hsl(228, 45%, 44%);
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.header {
+		&__center {
+			&-headline {
+				font-size: 3.2rem;
+			}
+			&-text {
+				font-size: 1.6rem;
+				padding: 0 3em;
+			}
+		}
+	}
+}
+@media (min-width: 768px) {
+	.header {
+		&__top {
+			&-btn {
+				padding: 1em 4em;
+			}
+		}
+		&__center {
+			margin-top: 5em;
+			&-text {
+				padding: 0 8em;
+			}
+			&-btn {
+				padding: 1.3em 6em;
+				font-size: 1.6rem;
+			}
+		}
+		&__bottom {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 4em;
+			
+		}
+	}
+}
+@media (min-width: 992px) {
+	.header {
+		&__center {
+			&-headline {
+				font-size: 4rem;
+			}
+			&-text {
+				font-size: 1.8rem;
+				padding: 0 12em;
+				
+			}
+		
+		}
+		&__bottom {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.header {
+		&__top {
+			&-btn {
+				padding: 1em 5em;
+			}
+		}
+		&__center {
+			&-headline {
+				font-size: 4.5rem;
+			}
+			&-text {
+				font-size: 2.2rem;
+				}
+				&-btn {
+					padding: 1.3em 8em;
+					font-size: 1.8rem;
+				}
+		}
+		&__bottom {
+			&-card {
+				&-number {
+					font-size: 8.8rem;
+				}
+				&-text {
+					font-size: 1.8rem;
+				}
+
+			}
 		}
 	}
 }
