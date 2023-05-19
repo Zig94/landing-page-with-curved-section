@@ -1,0 +1,117 @@
+@use '_colors' as *;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.6rem;
+	// font-family: 'Poppins', sans-serif;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+.header {
+	&__top {
+		padding: 2em 1.5em;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&-logo {
+			max-width: 35%;
+			height: auto;
+		}
+		&-btn {
+			font-size: 1.3rem;
+			font-weight: 600;
+			padding: 0.5em 2em;
+			background: none;
+			border-radius: 25px;
+			border: solid 1px $pink;
+			color: $pink;
+			cursor: pointer;
+			transition: background-color 0.3s, color 0.3s;
+			&:hover {
+				background-color: $pink;
+				color: $white;
+			}
+		}
+	}
+	&__center {
+		padding: 2em 1.5em;
+		margin-top: 2.5em;
+		text-align: center;
+		&-headline {
+			font-family: 'Poppins', sans-serif;
+			font-size: 2.6rem;
+			font-weight: bold;
+			margin-bottom: 1em;
+		}
+		&-text {
+			font-size: 1.5rem;
+			margin-bottom: 3.5em;
+		}
+		&-btn {
+			padding: 1em 3em;
+			font-size: 1.4rem;
+			font-weight: 600;
+			background-color: $pink;
+			color: $white;
+			border: solid 1px transparent;
+			border-radius: 25px;
+			cursor: pointer;
+			transition: background-color 0.3s, color 0.3s, border 0.3s;
+			&:hover {
+				background: none;
+				color: $pink;
+				border: solid 1px $pink;
+			}
+		}
+	}
+	&__img {
+		width: 100%;
+		height: auto;
+		padding: 5em 1.5em;
+	}
+	&__bottom {
+		padding: 2em 1.5em;
+		&-card {
+			width: 100%;
+			text-align: center;
+			margin-bottom: 8em;
+			&-icon {
+				max-width: 10%;
+				height: auto;
+				align-self: start;
+			}
+			&-number {
+				font-size: 6.8rem;
+				font-weight: 700;
+				margin-bottom: 0.1em;
+			}
+			&-text {
+				color: hsl(0, 0%, 50%);
+				
+			}
+		}
+	}
+}
+
+.footer {
+	.attribution {
+		font-size: 11px;
+		text-align: center;
+		a {
+			color: hsl(228, 45%, 44%);
+		}
+	}
+}
