@@ -11,9 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap"
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/82a194b55b.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
 </head>
-
 <body>
   <header class="header">
     <div class="wrapper">
@@ -29,12 +29,12 @@
       </div>
       <img src="./images/screen-mockups.svg" alt="project of mobile and desktop site" class="header__img"">
       <div class=" header__bottom">
-      <div class="header__bottom-card header__bottom-card--one">
+      <div class="header__bottom-card header__bottom-card--one" data-aos="zoom-in-down">
         <img src="./images/icon-communities.svg" alt="icon" class="header__bottom-card-icon">
         <p class="header__bottom-card-number">1.4k+</p>
         <p class="header__bottom-card-text">Communities Formed</p>
       </div>
-      <div class="header__bottom-card">
+      <div class="header__bottom-card" data-aos="zoom-in-up">
         <img src="./images/icon-messages.svg" alt="icon" class="header__bottom-card-icon">
         <p class="header__bottom-card-number">2.7m+</p>
         <p class="header__bottom-card-text">Messages<br>Sent</p>
@@ -48,7 +48,9 @@
     <section class="section section-one">
       <div class="wrapper section-box">
         <img src="./images/illustration-grow-together.svg" alt="" class="section-img">
-        <div class="section__info">
+        <div class="section__info" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
           <h2 class="section__info-title">Grow Together</h2>
           <p class="section__info-text">Generate meaningful discussions with your audience and build a strong, loyal
             community.
@@ -61,7 +63,9 @@
       <img src="./images/bg-section-bottom-desktop-1.svg" alt="" class="curved-bottom desktop-show">
       <div class="wrapper section-box section-box-two">
         <img src="./images/illustration-flowing-conversation.svg" alt="" class="section-img section-img-two">
-        <div class="section__info section__info--two">
+        <div class="section__info section__info--two" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
           <h2 class="section__info-title">Flowing Conversations</h2>
           <p class="section__info-text"> You wouldn't paginate a conversation in real life, so why do it online? Our
             threads have
@@ -74,7 +78,9 @@
     <section class="section section-three">
       <div class="wrapper section-box">
         <img src="./images/illustration-your-users.svg" alt="" class="section-img">
-        <div class="section__info">
+        <div class="section__info" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
           <h2 class="section__info-title">Your Users</h2>
           <p class="section__info-text">It takes no time at all to integrate Huddle with your app's authentication
             solution. This means,
@@ -127,7 +133,10 @@
       </div>
     </div>
   </footer>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
