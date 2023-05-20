@@ -44,7 +44,7 @@ body {
 }
 
 .bounce-bottom {
-  animation: bounce-bottom 1.5s both;
+  animation: bounce-bottom 3s both;
 }
 
 .btn-start {
